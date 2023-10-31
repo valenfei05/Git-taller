@@ -1,9 +1,9 @@
-from operations import division
+from operations import potencia
 def game():
     score = 0
     while True:
         print('======== Menu ========'
-        '\n1. Division'
+        '\n1. Potencia'
         '\n0. Exit')
         option = int(input('\nChoice an option: '))
         if option == 0:
@@ -12,9 +12,9 @@ def game():
         num_2 = input('Enter second number: ')
         answer = int(input('Enter you answer: '))
         if option == 1:
-            result = division(num_1, num_2)
+            result = potencia(num_1, num_2)
             if result == answer:
-                score += 2
+                score += 4
                 print('Correct!!')
             else:
                 print('Incorrect')
