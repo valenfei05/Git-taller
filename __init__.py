@@ -1,9 +1,9 @@
-from operations import substract
+from operations import multi
 def game():
     score = 0
     while True:
         print('======== Menu ========'
-        '\n1. Substract'
+        '\n1. Multiplication'
         '\n0. Exit')
         option = int(input('\nChoice an option: '))
         if option == 0:
@@ -12,9 +12,9 @@ def game():
         num_2 = input('Enter second number: ')
         answer = int(input('Enter you answer: '))
         if option == 1:
-            result = substract(num_1, num_2)
+            result = multi(num_1, num_2)
             if result == answer:
-                score += 1
+                score += 2
                 print('Correct!!')
             else:
                 print('Incorrect')
